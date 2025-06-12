@@ -12,6 +12,7 @@
     font-style: normal;
 }
 
+/*general*/
 body 
 {
     /*Background*/
@@ -65,9 +66,98 @@ p
     color: lightgray;
 }
 
+.header
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;    /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;              /* Space between items */
+
+}
+
+/*Text boxes*/
+.contact-info
+{
+    position: relative;
+    top: 50px; /* Adjust this value to position the contact info below the main content */
+    left: 10%;
+    width: 80%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    border-color: turquoise; /* Border color */
+    border-style: solid; /* Solid border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.game2d
+{
+    position: relative;
+    top: 110px; /* Adjust this value to position the game info below the main content */
+    left: 10%;
+    width: 80%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    border-color: darkblue; /* Border color */
+    border-style: solid; /* Solid border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.web-game
+{
+    position: relative;
+    top: 110px; /* Adjust this value to position the web game info below the main content */
+    left: 10%;
+    width: 80%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    border-color: blueviolet; /* Border color */
+    border-style: solid; /* Solid border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.pixel-Art
+{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    border-color: turquoise; /* Border color */
+    border-style: solid; /* Solid border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.web-devAlign
+{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 130px;              /* Space between items */
+}
+
 /*icons*/
 /* icons grouped */
 .icons
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 10px;   
+}
+
+.title
 {
     display: flex;
     align-items: center;       /* vertically align icon and text */
@@ -84,12 +174,7 @@ p
 .underNav
 {
     position: relative;
-    top: 70px; /* Adjust this value to position the icons below the navbar */
-    display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Center the icons vertically */
-    text-align: center;
-    gap: 20px; /* Space between icons */
+    top: 40px; /* Adjust this value to position the icons below the navbar */
     z-index: -10; /* Ensure the icons are below the main icon */
 
 }
@@ -123,8 +208,8 @@ p
 .webGame
 {
     background-image: url("Img/WebGame.png");
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
@@ -132,8 +217,8 @@ p
 .pixelArt
 {
     background-image: url("Img/PixelWeb.png");
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
@@ -141,8 +226,8 @@ p
 .library
 {
     background-image: url("Img/Library.png");
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
