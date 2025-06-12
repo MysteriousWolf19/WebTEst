@@ -93,6 +93,7 @@ li
     border-color: blueviolet; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: -1;
 }   
 
 .about-align
@@ -251,7 +252,7 @@ li
     border-color: turquoise; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
+    z-index: -1; /* Ensure it appears above other content */
 }
 
 .game-development
@@ -348,7 +349,7 @@ li
     border-color: darkblue; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
+    z-index: -1; /* Ensure it appears above other content */
 }
 
 .emails
