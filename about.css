@@ -73,7 +73,7 @@ p
     align-items: center;    /* Center items horizontally */
     justify-content: center; /* Center items vertically */
     gap: 20px;              /* Space between items */
-    z-index: -1; /* Ensure the header is below the main content */
+
 }
 
 /*Text boxes*/
@@ -90,7 +90,7 @@ p
     border-color: turquoise; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .game2d
@@ -106,7 +106,7 @@ p
     border-color: darkblue; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .web-game
@@ -122,7 +122,7 @@ p
     border-color: blueviolet; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .pixel-Art
@@ -137,7 +137,7 @@ p
     border-color: turquoise; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .web-devAlign

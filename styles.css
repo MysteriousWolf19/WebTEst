@@ -93,7 +93,7 @@ li
     border-color: blueviolet; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1;
+    z-index: 1;
 }   
 
 .about-align
@@ -252,7 +252,7 @@ li
     border-color: turquoise; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .game-development
@@ -349,7 +349,7 @@ li
     border-color: darkblue; /* Border color */
     border-style: solid; /* Solid border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: -1; /* Ensure it appears above other content */
+    z-index: 1; /* Ensure it appears above other content */
 }
 
 .emails
@@ -527,8 +527,8 @@ li
 .webGame
 {
     background-image: url("Img/WebGame.png");
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     background-position: center;
 }
@@ -536,8 +536,8 @@ li
 .pixelArt
 {
     background-image: url("Img/PixelWeb.png");
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     background-position: center;
 }
@@ -546,8 +546,8 @@ li
 .library
 {
     background-image: url("Img/Library.png");
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     background-position: center;
 }
