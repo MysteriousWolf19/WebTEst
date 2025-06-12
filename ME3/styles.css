@@ -1,0 +1,305 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("Font/Cochin-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url("Font/windsor_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*home page style*/
+body 
+{
+    /*Background*/
+    background-image: url("Img/Back.png");
+    background-repeat: no-repeat;
+    background-position: center; /* center the image */
+    background-size: cover; /* show full image without cropping */
+    background-attachment: fixed; /* optional: keeps the background fixed on scroll */
+
+    /*Alignment*/
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 
+{
+    font-family: myFirstFont;
+    font-size: 90px;
+    color: white;
+}
+
+h2 
+{
+    font-family: myFirstFont;
+    font-size: 75px;
+    color: white;
+}
+
+h3 
+{
+    font-family: myFirstFont;
+    font-size: 60px;
+    color: white;
+}
+
+h4 
+{
+    font-family: myFirstFont;
+    font-size: 45px;
+    color: white;
+}
+
+p
+{
+    font-family: mySecondFont;
+    font-size: 30px;
+    color: lightgray;
+}
+
+li
+{
+    font-family: mySecondFont;
+    font-size: 30px;
+    color: lightgray;
+}
+
+
+/*Icons*/
+.main-icon 
+{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background-image: url("Img/MyIcon.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -10; /* Ensure the icon is above other content */
+}
+
+
+.social-links/*Social media grouped*/
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 10px;   
+}
+
+.contact-icon/*Contact icon grouped*/
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 10px;   
+}
+
+.contact
+{
+    background-image: url("Img/Contact.png");
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Social media icons*/
+.pinterest
+{   
+    background-image: url("Img/Pinterest.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.discord
+{
+    background-image: url("Img/Discord.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram
+{
+    background-image: url("Img/Instagram.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tiktok
+{
+    background-image: url("Img/TikTok.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gmail 
+{
+    display: inline-block; /* important to make it behave like a box */
+    background-image: url("Img/Gmail.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Website icon grouped*/
+.web-icon
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 15px;   
+}
+
+/*website icons*/
+.webGame
+{
+    background-image: url("Img/WebGame.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.pixelArt
+{
+    background-image: url("Img/PixelWeb.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Game icon grouped*/
+.game-icon
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 15px;   
+}
+
+/*Game icons*/
+.library
+{
+    background-image: url("Img/Library.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*itch icon grouped*/
+.games-icon
+{
+    display: flex;
+    align-items: center;       /* vertically align icon and text */
+    justify-content: center;   /* horizontally center the whole group */
+    gap: 15px;   
+}
+
+.itch
+{
+    background-image: url("Img/Itch.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.github
+{
+    background-image: url("Img/GitHub.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*icon hover*/
+/*Zoom*/
+.webGame,
+.pixelArt,
+.library,
+.contact,
+.gmail,
+.pinterest,
+.discord,
+.instagram,
+.tiktok,
+.itch,
+.github
+{
+  transition: transform 0.3s ease;
+}
+
+.webGame:hover,
+.pixelArt:hover,
+.library:hover,
+.contact:hover,
+.gmail:hover,
+.pinterest:hover,
+.discord:hover,
+.instagram:hover,
+.tiktok:hover,
+.itch:hover,
+.github:hover
+{
+  transform: scale(2.5);
+}
+
+/*Text appear when hover*/
+.contact::after,
+.pinterest::after,
+.discord::after,
+.instagram::after,
+.tiktok::after,
+.gmail::after,
+.itch::after,
+.github::after
+{
+    content: attr(data-name);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: myFirstFont;
+    white-space: nowrap;
+    top: 60px; /* position below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none; /* prevent interference */
+    z-index: 1001;
+}
+
+.contact:hover::after,
+.pinterest:hover::after,
+.discord:hover::after,
+.instagram:hover::after,
+.tiktok:hover::after,
+.gmail:hover::after,
+.itch:hover::after,
+.github:hover::after
+{
+    opacity: 1;
+}

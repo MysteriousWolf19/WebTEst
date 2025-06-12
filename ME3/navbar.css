@@ -1,0 +1,61 @@
+@font-face {
+    font-family: mySecondFont;
+    src: url("Font/windsor_regular-webfont.woff") format("woff");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body 
+{
+  margin: 0;
+  font-family: mySecondFont, sans-serif;
+}
+
+.navbar 
+{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.logo 
+{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links 
+{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li 
+{
+  margin: 0 15px;
+}
+
+.nav-links a 
+{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-family: mySecondFont;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover 
+{
+    background-color: blueviolet;
+    color: white;
+}
