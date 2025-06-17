@@ -10,6 +10,10 @@ document.getElementById('libraryContent').addEventListener('click', () => {
   window.location.href = '2DGame.html#library';
 });
 
+document.getElementById('shapeContent').addEventListener('click', () => {
+  window.location.href = '3DGame.html#shape';
+});
+
 document.getElementById('ContactInfo').addEventListener('click', () => {
   window.location.href = 'Contact.html';
 });
