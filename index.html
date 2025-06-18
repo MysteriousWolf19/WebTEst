@@ -1,122 +1,202 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <title>Shenay's Site</title>
-    <meta name="description" content="Personal site of Shenay Topper">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta content="Personal site of Shenay Topper" name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">LunaWSMTrix</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Introduction -->
-    <div class="container text-center">
-        <h1 class="mb-0">Shenay Topper</h1>
-        <p class="lead">Welcome to my personal website! Here, you can find information about me, my projects, and how to contact me.</p>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="container mt-5">
-        <h2>About Me</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Education</h4>
-                <p>I am currently studying at the SAE Institute, where I am gaining valuable knowledge and experience in game development.</p>
-                <h4>Hobbies</h4>
-                <p>I enjoy playing video games, creating digital art, and exploring new technologies.</p>
-            </div>
-            <div class="col-md-6">
-                <h4>Skills</h4>
-                <ul>
-                    <li><strong>Game Dev:</strong> Unity, C#, Visual Studio Code</li>
-                    <li><strong>Web Dev:</strong> HTML, CSS, JavaScript</li>
-                    <li><strong>Art Tools:</strong> Sketchbook, Procreate</li>
-                    <li><strong>Other:</strong> Java</li>
-                </ul>
-                <p>I am proficient in various programming languages and tools, and I am always looking to expand my skill set.</p>
-            </div>
-        </div>
-        <div class="mt-4">
-            <h4>Future Goals</h4>
-            <p>
-                My goal is to work in the game development industry specifically in the Game Programmer or Game Designer roles, 
-                where I can contribute to creating innovative and engaging games.
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container mt-5">
-        <h2>Projects</h2>
-        <p>
-            I have completed several projects during my studies, including 2D and 3D games, web applications, and digital art.
+    <div class="container-fluid px-3 px-md-5">
+        <!-- Navbar -->
+        <div id="navbar"></div>
+        <!-- Main Heading -->
+        <h1>LunaWSMTrix</h1>
+        <div class="main-icon underNav"></div>
+        <!-- Introduction -->
+        <h2>Shenay Topper</h2>
+        <p>Welcome to my personal website! Here, you can find information about me, my projects, and how to contact me.
         </p>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Game Development</h4>
-                <p>My goal is to create immersive and enjoyable gaming experiences.</p>
-                <p><strong>2D Games:</strong> The Riddlekeeper's Library</p>
-                <p><strong>3D Games:</strong> The Silent Shape</p>
+        <div class="info-align">
+            <!-- About Section -->
+            <div class="about-me about-align">
+                <div class="about">
+                    <h3>About Me:</h3>
+                </div>
+                <div class="about-content1">
+                    <div class="education">
+                        <h4>Education:</h4>
+                        <p>I am currently studying at the SAE Institute, where I am gaining valuable knowledge and
+                            experience in game development.</p>
+                    </div>
+                    <!-- End of Education Section -->
+                    <div class="hobbies">
+                        <h4>Hobbies:</h4>
+                        <p>
+                            In my free time, I enjoy playing video games, creating digital art, and exploring new
+                            technologies.
+                            I also love to read and learn about game design and development trends.
+                        </p>
+                    </div>
+                </div>
+                <!-- End of Hobbies Section -->
+                <!-- Skills Section -->
+                <div class="skills">
+                    <h4>Skills:</h4>
+                    <ul>
+                        <div class="skills-list1">
+                            <div class="game-dev">
+                                <h4>Game Development tools and languages:</h4>
+                                <li>Unity</li>
+                                <li>C#</li>
+                                <li>Visual Studio Code</li>
+                            </div>
+                            <div class="web-dev">
+                                <h4>Web Development tools and languages:</h4>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>Visual Studio Code</li>
+                            </div>
+                        </div>
+                        <div class="skills-list2">
+                            <div class="art-tools">
+                                <h4>Art tools:</h4>
+                                <li>Sketchbook</li>
+                                <li>Procreate</li>
+                            </div>
+                            <div class="other-tools">
+                                <h4>Other Languages:</h4>
+                                <li>Java</li>
+                            </div>
+                        </div>
+                    </ul>
+                    <p>I am proficient in various programming languages and tools, and I am always looking to expand my
+                        skill set.</p>
+                </div>
+                <!-- End of Skills Section -->
+                <div class="future-goals">
+                    <h4>Future Goals:</h4>
+                    <p>
+                        My goal is to work in the game development industry specifically in the Game Programmer or Game
+                        Designer roles,
+                        where I can contribute to creating innovative and engaging games.
+                        I also aspire to continue learning and growing as a developer and artist.
+                    </p>
+                </div>
+                <!-- End of Future Goals Section -->
             </div>
-            <div class="col-md-6">
-                <h4>Web Development</h4>
+            <!-- End of About Section -->
+            <!-- Projects Section -->
+            <div class="projects game-align">
+                <h3>Projects:</h3>
                 <p>
-                    Projects include a web game, pixel art, and this website itself.
+                    I have completed several projects during my studies, including 2D and 3D games, web applications,
+                    and digital art pieces.
+                    I am proud of my ability to combine my programming skills with my artistic talents to create
+                    engaging content.
                 </p>
-                <p><strong>Games:</strong> Eevvee Web Game</p>
-                <p><strong>Art:</strong> Eevvee Pixel Art</p>
+                <!-- Game Development -->
+                <div class="game-development game-align">
+                    <h4>Game Development:</h4>
+                    <p>My goal is to create immersive and enjoyable gaming experiences.</p>
+                    <!-- 2D Game Section -->
+                    <div class="game2d">
+                        <h4>Here are some of my 2D game development projects:</h4>
+                        <div class="game-icon">
+                            <div class="library icon-click" data-name="The Riddlekeeper's Library" id="libraryContent">
+                            </div>
+                        </div>
+                    </div>
+                    <!--3D Game Section-->
+                    <div class="game3d">
+                        <h4>Here are some of my 3D game development projects:</h4>
+                        <div class="game-icon">
+                            <div class="shape icon-click" data-name="The Silent Shape" id="shapeContent"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Game Development -->
+                <!-- Web Development -->
+                <div class="web-development">
+                    <h4>Web Development:</h4>
+                    <p>I have worked on various web development projects, including:</p>
+                    <p>a small web game, interactive pixel art, and the site you are currently looking at.</p>
+                    <div class="web-icon">
+                        <div class="webGame icon-click" data-name="Eevvee Web Game" id="webGameContent"></div>
+                        <div class="pixelArt icon-click" data-name="Eevvee Pixel Art" id="pixelArtContent"></div>
+                    </div>
+                </div>
+                <!-- End of Web Development -->
+                <!-- Art Section -->
+                <div class="art">
+                    <h4>Art:</h4>
+                    <p>In addition to my development work, I enjoy creating digital art. You can find some of my artwork
+                        on my Instagram.</p>
+                </div>
+                <!-- End of Art Section -->
+            </div>
+            <!-- End of Projects Section -->
+            <!-- Contact Section -->
+            <div class="contact-me">
+                <div class="contact-icon">
+                    <h3>Contact Me:</h3>
+                    <div class="contact icon-click" data-name="Contact Info" id="ContactInfo"></div>
+                </div>
+                <div class="contact-content">
+                    <!-- Emails Section -->
+                    <div class="emails">
+                        <p>If you would like to get in touch with me, feel free to reach out via email at:</p>
+                        <div class="email-icon">
+                            <a class="gmail icon-hover" data-name="shenaytopper28@gmail.com"
+                                href="mailto:shenaytopper28@gmail.com"></a>
+                            <p>or</p>
+                            <a class="gmail icon-hover" data-name="lunaWSMTrix@gmail.com"
+                                href="mailto:lunaWSMTrix@gmail.com"></a>
+                        </div>
+                    </div>
+                    <!-- Social Media Section -->
+                    <div class="sm">
+                        <p>Or connect with me on social media:</p>
+                        <div class="social-links">
+                            <!-- Optional: Add Pinterest and TikTok when ready -->
+                            <a class="pinterest icon-hover icon-click" data-name="Pinterest" href="" id="pinterest"
+                                target="_blank"></a>
+                            <a class="discord icon-hover" data-name="Discord" href="https://discord.com/channels/@me"
+                                target="_blank"></a>
+                            <a class="instagram icon-hover" data-name="Instagram"
+                                href="https://www.instagram.com/lunawsmtrix/" target="_blank"></a>
+                            <a class="tiktok icon-hover icon-click" data-name="TikTok" href="" id="Tiktok"
+                                target="_blank"></a>
+                        </div>
+                    </div>
+                    <!-- Works Section -->
+                    <div class="works">
+                        <p>Or check out a few of my games for yourself:</p>
+                        <div class="games-icon">
+                            <a class="itch icon-hover" data-name="Itch" href="https://lunawsmtrix.itch.io"
+                                target="_blank"></a>
+                            <a class="github icon-hover" data-name="GitHub" href="" id="github" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="mt-4">
-            <h4>Art</h4>
-            <p>In addition to development, I create digital art — check it out on my Instagram.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container mt-5">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:shenaytopper28@gmail.com">shenaytopper28@gmail.com</a> or <a href="mailto:lunaWSMTrix@gmail.com">lunaWSMTrix@gmail.com</a></p>
-        <p>Connect with me on:</p>
-        <ul>
-            <li><a href="https://www.instagram.com/lunawsmtrix/" target="_blank">Instagram</a></li>
-            <li><a href="https://discord.com/channels/@me" target="_blank">Discord</a></li>
-            <li><a href="https://lunawsmtrix.itch.io" target="_blank">Itch.io</a></li>
-            <li><a href="#" target="_blank">GitHub</a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center mt-5 mb-3">
-        <h4>Thank you for visiting my site!</h4>
-    </footer>
-
-    <!-- Bootstrap JS (Bundle includes Popper.js) -->
+        <!-- End of Contact Section -->
+        <!-- Footer -->
+        <h3>Thank you for visiting my site!</h3>
+        <!-- End of Footer -->
+        <!-- Scripts -->
+        <script src="navbar.js"></script>
+        <script async="" defer="" src="script.js"></script>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="navbar.js"></script>
-    <script src="script.js" async defer></script>
 </body>
+
 </html>
