@@ -12,450 +12,89 @@
     font-style: normal;
 }
 
-/*home page style*/
-/*general*/
-body 
-{
-    /*Background*/
+/* === GENERAL LAYOUT === */
+body {
     background-image: url("Img/bgs/Back.png");
     background-repeat: no-repeat;
-    background-position: center; /* center the image */
-    background-size: cover; /* show full image without cropping */
-    background-attachment: fixed; /* optional: keeps the background fixed on scroll */
-
-    /*Alignment*/
-    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
-    padding: 0px;	
+    padding-top: 70px;
+    text-align: center;
 }
 
-h1 
-{
-    font-family: myFirstFont;
-    font-size: 90px;
-    color: white;
+h1 {
+  font-family: myFirstFont;
+  font-size: 5.625rem;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  color: white;
 }
 
-h2 
-{
-    font-family: myFirstFont;
-    font-size: 75px;
-    color: white;
+h2 {
+  font-family: myFirstFont;
+  font-size: 4.6875rem;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  color: white;
 }
 
-h3 
-{
-    font-family: myFirstFont;
-    font-size: 60px;
-    color: white;
+h3 {
+  font-family: myFirstFont;
+  font-size: 3.75rem;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  color: white;
 }
 
-h4 
-{
-    font-family: myFirstFont;
-    font-size: 45px;
-    color: white;
+h4 {
+  font-family: myFirstFont;
+  font-size: 2.8125rem;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  color: white;
 }
 
-p
-{
-    font-family: mySecondFont;
-    font-size: 30px;
-    color: lightgray;
+p, li { font-family: mySecondFont; font-size: 1.875rem; color: lightgray; }
+
+/* === COMMON CONTAINERS === */
+.section-box {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-style: solid;
+    z-index: 0;
 }
 
-li
-{
-    font-family: mySecondFont;
-    font-size: 30px;
-    color: lightgray;
-}
+.border-violet { border-color: blueviolet !important; }
+.border-darkblue { border-color: darkblue !important; }
+.border-turquoise { border-color: turquoise !important; }
 
-/*Text boxes*/
-
-.info-align
-{
+/* === FLEX GROUPINGS === */
+.flex-column-center {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px;              /* Space between items */
-} 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
-/*about content*/
-.about-me
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1;
-}   
-
-.about-align
-{
+.flex-center-wrap {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;    /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    gap: 20px;              /* Space between items */
-}
-
-.education
-{
-    position: relative;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
 }
 
-.hobbies
-{
-    position: relative;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: darkblue; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.skills
-{
-    position: relative;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.game-dev
-{
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.web-dev
-{
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: darkblue; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.art-tools
-{
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: darkblue; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.other-tools
-{
-    padding: 20px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.future-goals
-{
-    position: relative;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-/*about tontent grouped*/
-.about-content1
-{
-    padding: 20px;
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 10px;   
-}
-
-.skills-list1
-{
-    padding: 20px;
-    left: 10%;
-    display: flex;
-    align-items: center;    /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    gap: 20px;              /* Space between items */
-}
-
-.skills-list2
-{
-    padding: 20px;
-    left: 10%;
-    display: flex;
-    align-items: center;    /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    gap: 20px;              /* Space between items */
-}
-
-/*project*/
-.projects
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.game-development
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: darkblue; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.game-align
-{
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px;              /* Space between items */
-}
-
-.game2d
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.game3d
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.web-development
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}   
-
-.art
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.contact-me
-{
-    position: relative;
-    left: 10%;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: darkblue; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.emails
-{
-    position: relative;
-
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.sm
-{
-    position: relative;
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: turquoise; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-.works
-{
-    position: relative;
-
-    width: 80%;
-    max-width: 1200px; /* Limit the maximum width */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    border-color: blueviolet; /* Border color */
-    border-style: solid; /* Solid border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    z-index: 1; /* Ensure it appears above other content */
-}
-
-/*icons grouped*/
-.social-links/*Social media grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 10px;   
-}
-
-.contact-icon/*Contact icon grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 10px;   
-}
-
-.email-icon/*Email icon grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 10px;   
-}
-
-.web-icon/*Website icon grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 15px;   
-}
-
-.game-icon/*Game icon grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 15px;   
-}
-
-.games-icon /*itch+git icon grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 15px;   
-}
-
-.contact-content/*Contact content grouped*/
-{
-    display: flex;
-    align-items: center;       /* vertically align icon and text */
-    justify-content: center;   /* horizontally center the whole group */
-    gap: 15px;   
-}
-
-/*Icons*/
-.main-icon 
-{
+/* === ICONS === */
+.main-icon {
     position: absolute;
     top: 70px;
     left: 20px;
@@ -464,168 +103,50 @@ li
     background-image: url("Img/icons/MyIcon.png");
     background-size: cover;
     background-position: center;
-    z-index: -10; /* Ensure the icon is above other content */
+    z-index: -10;
 }
 
-.contact
-{
-    background-image: url("Img/icons/Contact.png");
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-position: center;
-}
-
-/*Social media icons*/
-.pinterest
-{   
-    background-image: url("Img/icons/Pinterest.png");
+.contact, .pinterest, .discord, .instagram, .tiktok, .gmail,
+.webGame, .pixelArt, .library, .shape, .itch, .github {
     width: 50px;
     height: 50px;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease;
 }
 
-.discord
-{
-    background-image: url("Img/icons/Discord.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-.instagram
-{
-    background-image: url("Img/icons/Instagram.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-.tiktok
-{
-    background-image: url("Img/icons/TikTok.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-.gmail 
-{
-    display: inline-block; /* important to make it behave like a box */
-    background-image: url("Img/icons/Gmail.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-/*website icons*/
-.webGame
-{
-    background-image: url("Img/icons/WebGame.png");
+.webGame, .pixelArt, .library, .shape {
     width: 150px;
     height: 150px;
-    background-size: cover;
-    background-position: center;
 }
 
-.pixelArt
-{
-    background-image: url("Img/icons/PixelWeb.png");
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
+.contact { background-image: url("Img/icons/Contact.png"); }
+.pinterest { background-image: url("Img/icons/Pinterest.png"); }
+.discord { background-image: url("Img/icons/Discord.png"); }
+.instagram { background-image: url("Img/icons/Instagram.png"); }
+.tiktok { background-image: url("Img/icons/TikTok.png"); }
+.gmail { background-image: url("Img/icons/Gmail.png"); }
+
+.webGame { background-image: url("Img/icons/WebGame.png"); }
+.pixelArt { background-image: url("Img/icons/PixelWeb.png"); }
+
+.library { background-image: url("Img/icons/Library.png"); }
+.shape { background-image: url("Img/icons/Shape.png"); }
+
+.itch { background-image: url("Img/icons/Itch.png"); }
+.github { background-image: url("Img/icons/GitHub.png"); }
+
+/* Hover Zoom */
+.webGame:hover, .pixelArt:hover, .library:hover, .shape:hover,
+.contact:hover, .gmail:hover, .pinterest:hover, .discord:hover,
+.instagram:hover, .tiktok:hover, .itch:hover, .github:hover {
+    transform: scale(2) translateY(-20px);
+    z-index: 1000;
 }
 
-/*Game icons*/
-.library
-{
-    background-image: url("Img/icons/Library.png");
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-}
-
-.shape
-{
-    background-image: url("Img/icons/Shape.png");
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-}
-
-/*Works*/
-.itch
-{
-    background-image: url("Img/icons/Itch.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-.github
-{
-    background-image: url("Img/icons/GitHub.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-/*icon hover*/
-/*Zoom*/
-.webGame,
-.pixelArt,
-.library,
-.shape,
-.contact,
-.gmail,
-.pinterest,
-.discord,
-.instagram,
-.tiktok,
-.itch,
-.github
-{
-  transition: transform 0.3s ease;
-}
-
-.webGame:hover,
-.pixelArt:hover,
-.library:hover,
-.contact:hover,
-.shape:hover,
-.gmail:hover,
-.pinterest:hover,
-.discord:hover,
-.instagram:hover,
-.tiktok:hover,
-.itch:hover,
-.github:hover
-{
-  transform: scale(2.5) translateY(-20px);
-  z-index: 1000; /* Bring to the front on hover */
-
-}
-
-/*Text appear when hover*/
-.contact::after,
-.pinterest::after,
-.discord::after,
-.instagram::after,
-.tiktok::after,
-.gmail::after,
-.itch::after,
-.github::after
-{
+/* Text Tooltip on Hover */
+.contact::after, .pinterest::after, .discord::after, .instagram::after,
+.tiktok::after, .gmail::after, .itch::after, .github::after {
     content: attr(data-name);
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -635,23 +156,17 @@ li
     font-size: 16px;
     font-family: myFirstFont;
     white-space: nowrap;
-    top: 60px; /* position below the icon */
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s ease;
-    pointer-events: none; /* prevent interference */
-    z-index: 1000; /* ensure it appears above other content */
+    pointer-events: none;
+    z-index: 1000;
 }
 
-.contact:hover::after,
-.pinterest:hover::after,
-.discord:hover::after,
-.instagram:hover::after,
-.tiktok:hover::after,
-.gmail:hover::after,
-.itch:hover::after,
-.github:hover::after
-{
+.contact:hover::after, .pinterest:hover::after, .discord:hover::after,
+.instagram:hover::after, .tiktok:hover::after, .gmail:hover::after,
+.itch:hover::after, .github:hover::after {
     opacity: 1;
 }
